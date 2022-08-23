@@ -1,0 +1,83 @@
+body {
+  background-color: rgb(31, 30, 30);
+  margin: 8rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+  width: 30rem;
+  margin: 3rem auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+input, textarea, select {
+  width: 30rem;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  font: inherit;
+  border: 1px solid rgb(184, 184, 184);
+  padding: 0.25rem;
+  color: rgb(60, 60, 60);
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  background-color: rgb(219, 190, 250);
+  color: rgb(32, 5, 63);
+  border-color: rgb(32, 5, 63);
+}
+
+button {
+  display: block;
+  font: inherit;
+  background-color: rgb(32, 5, 63);
+  color: white;
+  border: 1px soild rgb(31, 30, 30);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+  width: 100px;
+  margin: auto 5px;
+}
+
+button:hover {
+  background-color: rgb(52, 14, 95);
+  border-color: rgb(52, 14, 95);
+}
+
+.example {
+  display: flex;
+}
+
+.example input {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+#btn {
+    display: flex;
+    justify-content: flex-end;
+}
