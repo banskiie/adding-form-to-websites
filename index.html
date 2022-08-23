@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Challenge Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="your-name">Your Name</label
+              ><input type="text" name="yourname" id="your-name" required />
+            </li>
+            <li>
+              <label for="your-email">Your E-Mail Address</label>
+              <input type="email" name="youremail" id="your-email" required />
+            </li>
+            <li>
+              <label for="your-number">Your Phone Number</label
+              ><input
+                type="tel"
+                name="yournumber"
+                id="your-number"
+                required
+                minlength="11"
+              />
+            </li>
+            <li>
+              <label for="your-message">Your Message</label>
+              <textarea
+                name="yourmessage"
+                id="your-message"
+                required
+                minlength="10"
+                maxlength="200"
+                rows="6"
+              ></textarea>
+            </li>
+          </ul>
+          <section>
+            <label for="find-us">How did you find us?</label>
+            <select name="findus" id="find-us" required>
+              <option value="web-search">Web Search</option>
+              <option value="word-of-mouth">Word of Mouth</option>
+              <option value="other">Other</option>
+            </select>
+          </section>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="example">
+              <input
+                type="radio"
+                name="reply"
+                id="call-me"
+                value="call"
+                required
+              />
+              <label for="call-me">Call me</label>
+            </li>
+            <li class="example">
+              <input
+                type="radio"
+                name="reply"
+                id="send-email"
+                value="email"
+                required
+              />
+              <label for="send-email">Send me an email</label>
+            </li>
+            <li class="example">
+              <input
+                type="radio"
+                name="reply"
+                id="no-reply"
+                value="none"
+                required
+              />
+              <label for="no-reply">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section class="example">
+            <input
+              type="checkbox"
+              name="agreeterms"
+              id="agree-terms"
+              required
+            />
+            <label for="agree-terms">Accept Terms</label>
+        </section>
+        <section id="btn-grp">
+          <button type="reset" class="btn-empty">Clear</button>
+          <button type="submit" class="btn-filled">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
